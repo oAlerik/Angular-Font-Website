@@ -1,4 +1,9 @@
 <div>
   <h3>Let's write something here</h3>
-  <input type="text" placeholder="{{ placeholderText }}" />
+  <input
+    type="text"
+    placeholder="{{ placeholderText }}"
+    [(ngModel)]="userInput"
+  />
+  <app-fonts [userInput]="userInput"></app-fonts>
 </div>

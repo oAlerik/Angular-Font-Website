@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
+  inputs: ["userInput"],
   selector: "app-fonts",
   templateUrl: "./fonts.component.html",
   styleUrls: ["./fonts.component.scss"]

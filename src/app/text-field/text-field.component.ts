@@ -20,6 +20,8 @@ export class TextFieldComponent implements OnInit {
   ];
   randNum: number = Math.floor(Math.random() * this.randomTexts.length);
 
+  userInput: string = "";
+
   constructor() {}
 
   ngOnInit() {
