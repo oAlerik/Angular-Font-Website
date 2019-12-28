@@ -3,24 +3,8 @@
 </div>
 
 <div class="fonts-container">
-  <div class="roboto-slab grid-item">
-    <p class="underline">Roboto-Slab</p>
-    <p>{{ userInput }}</p>
-  </div>
-  <div class="ubuntu grid-item">
-    <p class="underline">Ubuntu</p>
-    <p>{{ userInput }}</p>
-  </div>
-  <div class="playfair-display grid-item">
-    <p class="underline">Playfair-Display</p>
-    <p>{{ userInput }}</p>
-  </div>
-  <div class="quicksand grid-item">
-    <p class="underline">Quicksand</p>
-    <p>{{ userInput }}</p>
-  </div>
-  <div class="inria-serif grid-item">
-    <p class="underline">Inria-Serif</p>
+  <div *ngFor="let font of fonts" class="{{ font.font }} grid-item">
+    <p>{{ font.font.toUpperCase() }}</p>
     <p>{{ userInput }}</p>
   </div>
 </div>

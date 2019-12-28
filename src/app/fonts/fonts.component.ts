@@ -7,7 +7,23 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./fonts.component.scss"]
 })
 export class FontsComponent implements OnInit {
-  title = "angular-font-website";
+  fonts = [
+    {
+      font: "roboto-slab"
+    },
+    {
+      font: "ubuntu"
+    },
+    {
+      font: "playfair-display"
+    },
+    {
+      font: "quicksand"
+    },
+    {
+      font: "inria-serif"
+    }
+  ];
 
   constructor() {}
 
