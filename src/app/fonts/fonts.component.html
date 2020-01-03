@@ -3,8 +3,8 @@
 </div>
 
 <div class="fonts-container">
-  <div *ngFor="let font of fonts" class="{{ font.font }} grid-item">
-    <p class="underline">{{ font.font.toUpperCase() }}</p>
+  <div *ngFor="let font of fonts" class="{{ font }} grid-item">
+    <p class="underline">{{ font.toUpperCase() }}</p>
     <p>{{ userInput }}</p>
   </div>
 </div>

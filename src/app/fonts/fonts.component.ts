@@ -8,21 +8,11 @@ import { Component, OnInit } from "@angular/core";
 })
 export class FontsComponent implements OnInit {
   fonts = [
-    {
-      font: "roboto-slab"
-    },
-    {
-      font: "ubuntu"
-    },
-    {
-      font: "playfair-display"
-    },
-    {
-      font: "quicksand"
-    },
-    {
-      font: "inria-serif"
-    }
+    "roboto-slab",
+    "ubuntu",
+    "playfair-display",
+    "quicksand",
+    "inria-serif"
   ];
 
   constructor() {}
